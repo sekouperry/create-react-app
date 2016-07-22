@@ -68,7 +68,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: srcPath,
-        loader: 'style!css!postcss'
+        loader: 'style!css?localIdentName=[name]!postcss'
       },
       {
         test: /\.json$/,
